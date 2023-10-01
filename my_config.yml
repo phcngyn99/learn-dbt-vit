@@ -1,0 +1,2 @@
+models_to_exclude:
+  - product_extend
