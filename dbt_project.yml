@@ -35,6 +35,8 @@ models:
       +materialized: table
       product_extend:
         enabled: FALSE
+      test:
+        enabled: FALSE
 
       role_playing_dimensions:
         +materialized: view
@@ -42,3 +44,7 @@ models:
     staging: 
       +materialized: view
       +schema: staging
+
+    exclude:
+      - models/analytics/product_extend.sql
+      - models/analytics/test.sql

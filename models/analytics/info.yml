@@ -1,0 +1,33 @@
+# Source setup
+version: 2
+
+sources:
+ - name: learn
+   description: 'Learn dbt'
+   database: learn-400408
+   schema: vitlamdata
+ - name: public
+   description: 'Wide World Importers (WWI) là dataset về một công ty hư cấu có tên là WWI. Công ty WWI chuyên nhập khẩu và phân phối, hoạt động tại Mỹ. Khách hàng của WWI là các cửa hàng bán lẻ, siêu thị, các công ty phân phối thứ cấp.'
+   database: vit-lam-data
+   schema: wide_world_importers
+   tables:
+    - name: purchasing__purchase_orders
+    - name: purchasing__supplier_categories
+    - name: purchasing__supplier_transactions
+    - name: purchasing__suppliers
+    - name: sales__buying_groups
+    - name: sales__customer_categories
+    - name: sales__customer_transactions
+    - name: sales__customers
+    - name: sales__invoice_lines
+    - name: sales__invoices
+    - name: sales__order_lines
+    - name: sales__orders
+    - name: sales__special_deals
+    - name: warehouse__colors
+    - name: warehouse__package_types
+    - name: warehouse__stock_groups
+    - name: warehouse__stock_item_holdings
+    - name: warehouse__stock_item_stock_groups
+    - name: warehouse__stock_item_transactions
+    - name: warehouse__stock_items
