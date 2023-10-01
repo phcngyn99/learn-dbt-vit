@@ -33,6 +33,8 @@ models:
   template:
     analytics:
       +materialized: table
+      product_extend:
+        enabled: FALSE
 
       role_playing_dimensions:
         +materialized: view
